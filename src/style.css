@@ -10,12 +10,11 @@ body {
     rgb(232, 188, 234) 57.5%,
     rgb(203, 209, 244) 90.7%
   );
-
   font-family: "Roboto", sans-serif;
 }
 
 .weather-app {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.9);
   max-width: 600px;
   margin: 40px auto;
   margin-bottom: 100%;
@@ -38,8 +37,8 @@ header {
   /* background: rgba(232, 188, 234, 0.3); */
   border: none;
   border-radius: 5px;
-  padding: 15px;
-  width: 80%;
+  padding: 10px;
+  width: 82%;
   font-size: 16px;
 }
 
@@ -47,39 +46,47 @@ header {
   background-color: rgba(130, 34, 168, 0.8);
   border: none;
   border-radius: 5px;
-  padding: 15px 20px;
-  margin: 10px;
+  padding: 10px 20px;
+  margin-left: 12px;
   font-size: 16px;
   color: white;
 }
 
 .weather-data {
   display: flex;
-  justify-content: space-around;
-  padding-bottom: 20px;
-  padding-top: 20px;
+  justify-content: space-evenly;
+  padding-bottom: 40px;
+  padding-top: 40px;
   align-content: center;
 }
 
-p {
-  line-height: 2;
+.currentCity {
+  font-size: 50px;
+  margin-bottom: 5px;
+  margin-top: 30px;
 }
 
 .current-emoji {
   font-size: 100px;
   align-content: center;
   text-align: center;
-  line-height: 0.7;
+  line-height: 1;
 }
 
 .current-temperature {
   font-size: 70px;
   align-content: center;
   padding: 0 auto;
+  margin-top: -30px;
+}
+
+.weatherDetails {
+  margin-top: 40px;
+  line-height: 1.5;
 }
 
 footer {
-  border-top: 1px solid #f9f7fe;
+  border-top: 1px solid #e8c3e0;
   padding-top: 20px;
   text-align: center;
   font-size: 12px;
