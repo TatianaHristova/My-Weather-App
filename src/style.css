@@ -38,7 +38,7 @@ header {
   border: none;
   border-radius: 5px;
   padding: 10px;
-  width: 82%;
+  width: 85%;
   font-size: 16px;
 }
 
@@ -46,43 +46,64 @@ header {
   background-color: rgba(130, 34, 168, 0.8);
   border: none;
   border-radius: 5px;
-  padding: 10px 20px;
-  margin-left: 12px;
+  padding: 10px 10px;
   font-size: 16px;
+  width: 14%;
   color: white;
 }
 
-.weather-data {
+.search-form-submit:hover {
+  cursor: pointer;
+}
+
+.weather-data-container {
   display: flex;
-  justify-content: space-evenly;
-  padding-bottom: 40px;
+  justify-content: space-between;
   padding-top: 40px;
+  padding-bottom: 40px;
   align-content: center;
 }
 
 .currentCity {
   font-size: 50px;
-  margin-bottom: 5px;
-  margin-top: 30px;
+  margin: 0;
+  line-height: 50px;
+  font-weight: 600;
+}
+.date-description-info {
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 320;
+}
+
+.emoji-temp-group {
+  display: flex;
 }
 
 .current-emoji {
-  font-size: 100px;
-  align-content: center;
-  text-align: center;
-  line-height: 1;
+  width: 80px;
+  position: relative;
+  top: -20%;
 }
 
 .current-temperature {
-  font-size: 70px;
-  align-content: center;
-  padding: 0 auto;
-  margin-top: -30px;
+  font-size: 60px;
+  font-weight: 380;
+  margin-left: -10px;
 }
 
-.weatherDetails {
-  margin-top: 40px;
-  line-height: 1.5;
+.weather-details {
+  font-size: 16px;
+  margin-left: 20px;
+  font-weight: 320;
+}
+
+#humidity {
+  color: rgba(130, 34, 168, 0.8);
+}
+
+#wind-speed {
+  color: rgba(130, 34, 168, 0.8);
 }
 
 footer {

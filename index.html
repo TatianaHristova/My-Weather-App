@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>
   </head>
   <body>
-    <div class="weather-app box">
+    <div class="weather-app">
       <header>
         <form class="search-form" id="search-form">
           <input
@@ -27,20 +27,29 @@
           <input type="submit" value="Search" class="search-form-submit" />
         </form>
       </header>
+
       <main>
-        <section class="weather-data">
-          <div>
+        <section class="weather-data-container">
+          <div class="city-date-description-group">
             <h1 class="currentCity" id="currentCity">Paris</h1>
-            <div id="description">Scattered clouds</div>
+            <div class="date-description-info">
+              <div id="date-info">Tuesdat, 20:00</div>
+              <div id="description">cloudy</div>
+            </div>
           </div>
-          <div>
-            <div class="current-emoji">☁️</div>
+
+          <div class="emoji-temp-group">
+            <img
+              src="http://shecodes-assets.s3.amazonaws.com/api/weather/icons/scattered-clouds-day.png"
+              class="current-emoji"
+              id="current-emoji"
+            />
             <div class="current-temperature" id="current-temperature"></div>
           </div>
-          <div class="weatherDetails">
-            <div id="date-info"></div>
-            <div>Humidity: <strong id="humidity"></strong></div>
-            <div>Wind: <strong id="wind-speed"></strong></div>
+          <div class="weather-details">
+            <div>💧 Humidity: <strong id="humidity"></strong></div>
+            <br />
+            <div>💨 Wind: <strong id="wind-speed"></strong></div>
           </div>
         </section>
       </main>
