@@ -1,6 +1,7 @@
 function updateWeatherInfo(response) {
   let cityElement = document.querySelector("#currentCity");
   let descriptionElement = document.querySelector("#description");
+  let emojiElement = document.querySelector("#current-emoji");
   let temperatureElement = document.querySelector("#current-temperature");
   let temperature = response.data.temperature.current;
   let timeElement = document.querySelector("#date-info");
@@ -10,6 +11,7 @@ function updateWeatherInfo(response) {
 
   cityElement.innerHTML = response.data.city;
   descriptionElement.innerHTML = response.data.condition.description;
+  emojiElement.innerHTML = `<img src="${response.data.condition.icon_url}" class="current-emoji" />`;
   temperatureElement.innerHTML = `${Math.round(temperature)}°C`;
   timeElement.innerHTML = formatDate(date);
   humidityElement.innerHTML = `${response.data.temperature.humidity}%`;
