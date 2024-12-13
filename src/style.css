@@ -1,9 +1,4 @@
 body {
-  /* background: linear-gradient(
-    106.5deg,
-    #efeafb 23%,
-    rgba(223, 159, 247, 0.8) 93%
-  ); */
   background: linear-gradient(
     103deg,
     rgb(235, 225, 188) 7.2%,
@@ -107,10 +102,12 @@ header {
 
 #humidity {
   color: rgba(106, 28, 137, 0.8);
+  font-weight: 500;
 }
 
 #wind-speed {
   color: rgba(106, 28, 137, 0.8);
+  font-weight: 500;
 }
 
 .weather-forecast {
@@ -122,22 +119,25 @@ header {
 .weather-forecast-date {
   text-align: center;
   font-size: 16px;
-  line-height: 30px;
+  font-weight: 380;
+  line-height: 15px;
+  color: rgba(55, 8, 74, 0.683);
 }
 
 .weather-forecast-emoji {
-  text-align: center;
-  font-size: 26px;
-  line-height: 40px;
+  width: 70%;
+  display: block;
+  margin: 0 auto;
 }
 
 .weather-forecast-temperatures {
   text-align: center;
   font-size: 16px;
-  line-height: 20px;
+  line-height: 10px;
   color: rgba(106, 28, 137, 0.8);
   display: flex;
   justify-content: center;
+  margin-bottom: 20px;
 }
 
 .weather-forecast-temperature {
@@ -153,5 +153,5 @@ footer {
 }
 
 a {
-  color: #7556c2d6;
+  color: rgba(97, 25, 125, 0.6);
 }
