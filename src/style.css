@@ -82,16 +82,14 @@ header {
 
 .current-emoji {
   width: 80px;
-  height: 80px;
   position: relative;
   top: -6px;
-  padding-right: 1px;
 }
 
 .current-temperature {
   font-size: 60px;
   font-weight: 380;
-  margin-left: -10px;
+  margin-left: -2px;
 }
 
 .weather-details {
@@ -112,7 +110,7 @@ header {
 
 .weather-forecast {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   margin-bottom: 10px;
 }
 
@@ -121,11 +119,11 @@ header {
   font-size: 16px;
   font-weight: 380;
   line-height: 15px;
-  color: rgba(55, 8, 74, 0.683);
+  color: rgba(35, 7, 46, 0.712);
 }
 
 .weather-forecast-emoji {
-  width: 70%;
+  width: 50%;
   display: block;
   margin: 0 auto;
 }
@@ -133,11 +131,13 @@ header {
 .weather-forecast-temperatures {
   text-align: center;
   font-size: 16px;
-  line-height: 10px;
+  font-weight: 380;
+  line-height: 20px;
   color: rgba(106, 28, 137, 0.8);
   display: flex;
   justify-content: center;
   margin-bottom: 20px;
+  margin-top: 5px;
 }
 
 .weather-forecast-temperature {
