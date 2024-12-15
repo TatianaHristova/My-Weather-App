@@ -15,60 +15,62 @@
   </head>
   <body>
     <div class="weather-app">
-      <header>
-        <form class="search-form" id="search-form">
-          <input
-            type="search"
-            placeholder="Enter a city.."
-            required
-            class="search-form-input"
-            id="search-form-input"
-          />
-          <input type="submit" value="Search" class="search-form-submit" />
-        </form>
-      </header>
+      <div class="inner-container">
+        <header>
+          <form class="search-form" id="search-form">
+            <input
+              type="search"
+              placeholder="Enter a city.."
+              required
+              class="search-form-input"
+              id="search-form-input"
+            />
+            <input type="submit" value="Search" class="search-form-submit" />
+          </form>
+        </header>
 
-      <main>
-        <section class="weather-data-container">
-          <div class="city-date-description-group">
-            <h1 class="currentCity" id="currentCity"></h1>
-            <div class="date-description-info">
-              <div id="date-info"></div>
-              <div id="description"></div>
+        <main>
+          <section class="weather-data-container">
+            <div class="city-date-description-group">
+              <h1 class="currentCity" id="currentCity"></h1>
+              <div class="date-description-info">
+                <div id="date-info"></div>
+                <div id="description"></div>
+              </div>
             </div>
-          </div>
 
-          <div class="emoji-temp-group">
-            <div id="current-emoji" class="current-emoji"></div>
-            <div class="current-temperature" id="current-temperature"></div>
-          </div>
-          <div class="weather-details">
-            <div>💧 <strong id="humidity"></strong></div>
-            <br />
-            <div>💨 <strong id="wind-speed"></strong></div>
-          </div>
-        </section>
+            <div class="emoji-temp-group">
+              <div id="current-emoji" class="current-emoji"></div>
+              <div class="current-temperature" id="current-temperature"></div>
+            </div>
+            <div class="weather-details">
+              <div>💧 <strong id="humidity"></strong></div>
+              <br />
+              <div>💨 <strong id="wind-speed"></strong></div>
+            </div>
+          </section>
 
-        <div class="weather-forecast" id="forecast"></div>
-      </main>
+          <div class="weather-forecast" id="forecast"></div>
+        </main>
 
-      <footer>
-        This project was coded by
-        <a href="https://github.com/TatianaHristova" target="_blank">
-          Tatiana Hristova.</a
-        >
-        Open-sourced on
-        <a
-          href="https://github.com/TatianaHristova/My-Weather-App"
-          target="_blank"
-        >
-          GitHub.</a
-        >
-        Hosted on
-        <a href="https://appweatherproject00.netlify.app/" target="_blank">
-          Netlify.</a
-        >
-      </footer>
+        <footer>
+          This project was coded by
+          <a href="https://github.com/TatianaHristova" target="_blank">
+            Tatiana Hristova.</a
+          >
+          Open-sourced on
+          <a
+            href="https://github.com/TatianaHristova/My-Weather-App"
+            target="_blank"
+          >
+            GitHub.</a
+          >
+          Hosted on
+          <a href="https://appweatherproject00.netlify.app/" target="_blank">
+            Netlify.</a
+          >
+        </footer>
+      </div>
     </div>
     <script src="src/index.js"></script>
   </body>
